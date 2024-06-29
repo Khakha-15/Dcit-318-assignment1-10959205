@@ -38,26 +38,23 @@ class Program
             Console.ReadKey();
             Console.Clear();
         }
-  }
+    }
 
     static void RunGradeCalculator()
     {
         Console.WriteLine("\nRunning Grade Calculator...");
-        // Call Grade Calculator main method or functions here
-        GradeCalculator.Main(new string[0]);
+        GradeCalculator.CalculateGrade();
     }
 
     static void RunTicketPriceCalculator()
     {
         Console.WriteLine("\nRunning Ticket Price Calculator...");
-        // Call Ticket Price Calculator main method or functions here
-        TicketPriceCalculator.Main(new string[0]);
+        TicketPriceCalculator.CalculateTicketPrice();
     }
 
     static void RunTriangleTypeIdentifier()
     {
         Console.WriteLine("\nRunning Triangle Type Identifier...");
-        // Call Triangle Type Identifier main method or functions here
-        TriangleTypeIdentifier.Main(new string[0]);
-    }
+        TriangleTypeIdentifier.IdentifyTriangleType();
+    }
 }

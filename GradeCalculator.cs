@@ -1,8 +1,8 @@
 using System;
 
-class GradeCalculator
+public class GradeCalculator
 {
-    static void Main(string[] args)
+    public static void CalculateGrade()
     {
         Console.WriteLine("Enter your numerical grade (0-100):");
         int grade = Convert.ToInt32(Console.ReadLine());
@@ -12,7 +12,7 @@ class GradeCalculator
         Console.WriteLine($"Your letter grade is: {letterGrade}");
     }
 
-    static char DetermineLetterGrade(int grade)
+    private static char DetermineLetterGrade(int grade)
     {
         if (grade >= 90)
             return 'A';
@@ -23,6 +23,6 @@ class GradeCalculator
         else if (grade >= 60)
             return 'D';
         else
-            return 'F';
-    }
+            return 'F';
+    }
 }

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Dcit 318 assignment1-10959205/1.0.0": {
+        "runtime": {
+          "Dcit 318 assignment1-10959205.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dcit 318 assignment1-10959205/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

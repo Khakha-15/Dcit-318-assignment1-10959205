@@ -1,18 +1,18 @@
 using System;
 
-class TicketPriceCalculator
+public class TicketPriceCalculator
 {
-    static void Main(string[] args)
+    public static void CalculateTicketPrice()
     {
         Console.WriteLine("Enter your age:");
         int age = Convert.ToInt32(Console.ReadLine());
 
-        decimal ticketPrice = CalculateTicketPrice(age);
+        decimal ticketPrice = CalculatePrice(age);
 
         Console.WriteLine($"Your ticket price is: GHC {ticketPrice}");
     }
 
-    static decimal CalculateTicketPrice(int age)
+    private static decimal CalculatePrice(int age)
     {
         const decimal standardPrice = 10;
         const decimal discountedPrice = 7;
@@ -21,5 +21,5 @@ class TicketPriceCalculator
             return discountedPrice;
         else
             return standardPrice;
-    }
+    }
 }

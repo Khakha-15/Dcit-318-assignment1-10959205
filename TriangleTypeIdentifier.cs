@@ -1,8 +1,8 @@
 using System;
 
-class TriangleTypeIdentifier
+public class TriangleTypeIdentifier
 {
-    static void Main(string[] args)
+    public static void IdentifyTriangleType()
     {
         Console.WriteLine("Enter the length of side 1 of the triangle:");
         double side1 = Convert.ToDouble(Console.ReadLine());
@@ -11,12 +11,12 @@ class TriangleTypeIdentifier
         Console.WriteLine("Enter the length of side 3 of the triangle:");
         double side3 = Convert.ToDouble(Console.ReadLine());
 
-        string triangleType = IdentifyTriangleType(side1, side2, side3);
+        string triangleType = DetermineTriangleType(side1, side2, side3);
 
         Console.WriteLine($"The triangle type is: {triangleType}");
     }
 
-    static string IdentifyTriangleType(double side1, double side2, double side3)
+    private static string DetermineTriangleType(double side1, double side2, double side3)
     {
         if (side1 == side2 && side2 == side3)
             return "Equilateral";
@@ -24,5 +24,5 @@ class TriangleTypeIdentifier
             return "Isosceles";
         else
             return "Scalene";
-    }
+    }
 }
